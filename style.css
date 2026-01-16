@@ -26,10 +26,10 @@ body {
 }
 
 a { text-decoration: none; color: var(--accent); transition: 0.2s; }
-a:hover { opacity: 0.8; text-decoration: underline; }
+a:hover { opacity: 0.8; }
 
 /* --- HEADER SECTION --- */
-header { margin-bottom: 80px; }
+header { margin-bottom: 60px; }
 
 .role {
     color: var(--accent);
@@ -52,6 +52,45 @@ h1 {
     color: var(--text-muted);
     font-size: 1.2rem;
     max-width: 600px;
+}
+
+/* --- BUTTONS --- */
+.hero-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--bg-color);
+}
+.btn-primary:hover { background-color: #7dd3fc; }
+
+.btn-secondary {
+    border: 1px solid var(--text-muted);
+    color: var(--text-main);
+}
+.btn-secondary:hover { border-color: var(--text-main); }
+
+/* --- SKILLS SECTION --- */
+.skills-section { margin-bottom: 60px; }
+
+.tech-stack.large .tech-tag {
+    font-size: 0.9rem;
+    padding: 6px 14px;
 }
 
 /* --- PROJECTS GRID --- */
@@ -84,21 +123,27 @@ h1 {
     border-color: var(--accent);
 }
 
-.project-card h3 { 
-    font-size: 1.4rem; 
-    margin-bottom: 10px; 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
 }
+
+.card-header h3 { font-size: 1.4rem; margin-bottom: 0; }
+
+.project-links { display: flex; gap: 15px; font-size: 1.2rem; }
 
 .project-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
     margin-bottom: 20px;
-    flex-grow: 1; /* Pushes the tech stack to the bottom if text is short */
+    flex-grow: 1;
 }
 
 .tech-stack {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -112,7 +157,32 @@ h1 {
     font-weight: 600;
 }
 
+/* --- REPO LINKS (Bottom of Card) --- */
 .links { font-size: 0.9rem; font-weight: bold; }
+
+.repo-links {
+    margin-top: auto; /* Pushes to bottom */
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.repo-label {
+    font-size: 0.85rem;
+    color: #94a3b8; 
+}
+
+.repo-links a {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.repo-links a:hover { text-decoration: underline; }
+
+.divider { color: #334155; }
 
 /* --- FOOTER --- */
 footer {
@@ -128,14 +198,9 @@ footer {
     gap: 20px;
 }
 
-/* --- RESPONSIVE ADJUSTMENTS --- */
-/* These rules kick in only on smaller screens (like phones) */
+/* --- RESPONSIVE --- */
 @media (max-width: 600px) {
     h1 { font-size: 2.2rem; }
-    
-    .container { padding: 20px 10px; }
-    
-    header { margin-bottom: 40px; }
-    
-    .section-title { font-size: 1.3rem; }
+    .container { padding: 20px 15px; }
+    .project-links { font-size: 1.4rem; } /* Make icons easier to tap */
 }
