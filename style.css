@@ -314,15 +314,14 @@ h1 {
 }
 
 .mobile-img {
-    aspect-ratio: 1440 / 3088;
+    width: 100%;
     height: auto;
-    max-height: 400px;
-    width: auto;
+    max-height: 500px;
     display: block;
     margin: 0 auto 15px auto;
     object-fit: contain;
     border-radius: 12px;
-    background-color: var(--bg-color); /* To fill empty space nicely if contain leaves gaps */
+    background-color: transparent;
 }
 
 .timeline-content h3 {
