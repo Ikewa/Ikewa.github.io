@@ -114,6 +114,10 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.name-text {
+    white-space: nowrap;
+}
+
 .bio {
     color: var(--text-muted);
     font-size: 1.3rem;
@@ -344,6 +348,7 @@ footer {
 /* --- RESPONSIVE TIMELINE --- */
 @media screen and (max-width: 768px) {
     h1 { font-size: 2.8rem; }
+    .name-text { white-space: normal; }
     header { flex-direction: column; }
     .theme-toggle { align-self: flex-end; margin-top: -30px; }
     
