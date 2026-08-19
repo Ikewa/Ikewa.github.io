@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,176 +9,251 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background Blobs -->
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
 
     <div class="container">
         <header>
-            <span class="role">Software Engineer</span>
-            <h1>Hi, I'm Ismail Dauda Kewa.</h1>
-            <p class="bio">
-                I build scalable backend systems, mobile apps, and robust infrastructure. 
-                Passionate about clean code, open source, and solving complex technical challenges.
-            </p>
-            <div class="hero-links">
-                <a href="https://github.com/Ikewa" target="_blank" class="btn-primary">
-                    <i class="fab fa-github"></i> View My GitHub
-                </a>
-                <a href="mailto:amirismailkewa@gmail.com" class="btn-secondary">
-                    <i class="fas fa-envelope"></i> Contact Me
-                </a>
+            <div class="header-content">
+                <span class="role">Software Engineer</span>
+                <h1>Hi, I'm Ismail Dauda Kewa.</h1>
+                <p class="bio">
+                    I build scalable backend systems, mobile apps, and robust infrastructure. 
+                    Passionate about clean code, open source, and solving complex technical challenges.
+                </p>
+                <div class="hero-links">
+                    <a href="https://github.com/Ikewa" target="_blank" class="btn-primary">
+                        <i class="fab fa-github"></i> View My GitHub
+                    </a>
+                    <a href="mailto:amirismailkewa@gmail.com" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
             </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-sun"></i>
+            </button>
         </header>
 
         <section class="skills-section">
-            <h2 class="section-title">Technical Stack</h2>
-            <div class="tech-stack large">
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Dart & Flutter</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">DevOps</span>
-                <span class="tech-tag">React & TypeScript</span>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3>AgriConnect</h3>
-                        <div class="project-links">
-                            <a href="https://my-frontend-ten-xi.vercel.app" target="_blank" title="Live Demo">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://youtu.be/cr_KUCn9590?si=RIGrSUhdPw_BlGlm" target="_blank" title="Watch Demo Video">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <p>
-                        A full-stack agricultural marketplace designed to bridge the gap between farmers and extension in real-time.<br>
-                        It features live chat, and a user-friendly interface to facilitate seamless interactions. 
-                        <br><br>
-                        <strong>The Backend Challenge:</strong> Engineered a robust Node.js/MySQL architecture to handle secure transactions.
-                        <br>
-                        <strong>Key Feature:</strong> Implemented <strong>REACT</strong> for Frontend <strong>Socket.io</strong> for low-latency chat and <strong>JWT</strong> for secure authentication.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Socket.io</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-
-                    <div class="repo-links">
-                        <span class="repo-label">Source Code:</span>
-                        <a href="https://github.com/Ikewa/capstone_backend" target="_blank">
-                            <i class="fas fa-server"></i> Backend
-                        </a>
-                        <span class="divider">|</span>
-                        <a href="https://github.com/Ikewa/capstone_frontend" target="_blank">
-                            <i class="fas fa-desktop"></i> Frontend
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3>CareCost</h3>
-                        <div class="project-links">
-                            <a href="#" target="_blank" title="Live Demo (Coming Soon)">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/Ikewa/carecost.git" target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <p>
-                        A comprehensive Health & Fintech Dashboard that correlates personal wellness data with financial health.
-                        <br><br>
-                        <strong>The Engineering Challenge:</strong> Built a persistent client-side "backend" using <strong>React Context API & LocalStorage</strong> to simulate a full-stack application without a server.
-                        <br>
-                        <strong>Key Feature:</strong> Gamified Health Score engine that updates in real-time based on daily logging and spending habits.
-                    </p>
-
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
                     <div class="tech-stack">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Vite</span>
                         <span class="tech-tag">Material UI</span>
-                        <span class="tech-tag">Recharts</span>
-                        <span class="tech-tag">Context API</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://github.com/Ikewa/carecost.git">View Repository &rarr;</a>
+                        <span class="tech-tag">HTML/CSS/JS</span>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3>Event Locator</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Ikewa/Event_Locator" target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <p>
-                        A location-based discovery platform that connects users to live events in their immediate vicinity.
-                        <br><br>
-                        <strong>The Engineering Challenge:</strong> Integrating <strong>Geolocation Services</strong> to filter database queries by radius and user location.
-                        <br>
-                        <strong>Key Feature:</strong> Users receive live updates on event status, requiring efficient data fetching.
-                    </p>
-
+                <div class="skill-category">
+                    <h3>Backend</h3>
                     <div class="tech-stack">
-                        <span class="tech-tag">Geolocation API</span>
-                        <span class="tech-tag">Google Maps</span>
-                        <span class="tech-tag">Real-time</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://github.com/Ikewa/Event_Locator">View Repository &rarr;</a>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">Python (Django)</span>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3>Mobile Recipe App</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/Ikewa/recipe_flutter_summative" target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <p>
-                        A cross-platform mobile application that allows users to discover and cook new meals.
-                        <br><br>
-                        <strong>The Mobile Challenge:</strong> Built with <strong>Flutter & Dart</strong>, I implemented efficient API consumption to fetch recipes without lagging the UI.
-                        <br>
-                        <strong>Key Feature:</strong> Clean, intuitive interface for browsing detailed cooking instructions dynamically.
-                    </p>
-
+                <div class="skill-category">
+                    <h3>Mobile</h3>
                     <div class="tech-stack">
                         <span class="tech-tag">Flutter</span>
                         <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">REST API</span>
-                        <span class="tech-tag">Mobile</span>
                     </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & DevOps</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="links">
-                        <a href="https://github.com/Ikewa/recipe_flutter_summative">View Repository &rarr;</a>
+        <section class="roadmap-section">
+            <h2 class="section-title">Project Roadmap</h2>
+            <div class="timeline">
+
+                <!-- 1. Onlok -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Onlok</h3>
+                        <div class="timeline-role">Chief Technology Officer & Full-Stack Developer</div>
+                        <p>An online vendor verification platform. Spearheaded development and deployment, managing frontend interfaces, backend routes, database migrations, domain settings, and deployment pipelines.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Databases</span>
+                            <span class="tech-tag">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. AgriConnect -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>AgriConnect (Green Academy)</h3>
+                        <div class="timeline-role">Lead Developer (Capstone Project)</div>
+                        <p>A full-stack agricultural marketplace platform addressing the 1:10,000 extension officer-to-farmer ratio in Northern Nigeria. Features Q&A forums, crop recommendation engine, and real-time chat.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React 18</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://my-frontend-ten-xi.vercel.app" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://youtu.be/cr_KUCn9590?si=RIGrSUhdPw_BlGlm" target="_blank" title="Watch Demo Video"><i class="fab fa-youtube"></i></a>
+                            <a href="https://github.com/Ikewa/capstone_backend" target="_blank" title="Backend Source"><i class="fas fa-server"></i></a>
+                            <a href="https://github.com/Ikewa/capstone_frontend" target="_blank" title="Frontend Source"><i class="fas fa-desktop"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Investment Fund Platform -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Investment Fund Platform</h3>
+                        <div class="timeline-role">Client Project</div>
+                        <p>A professional web application for an investment fund. Delivered comprehensive architecture diagrams and a formal tech stack document alongside the robust codebase.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. CareCost -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>CareCost</h3>
+                        <div class="timeline-role">Frontend Engineer</div>
+                        <p>A Health & Fintech Dashboard correlating wellness data with financial health. Built a persistent client-side "backend" using React Context & LocalStorage to simulate full-stack behavior.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Material UI</span>
+                            <span class="tech-tag">Recharts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ikewa/carecost.git" target="_blank" title="View Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Stephen Alaekwe & Co -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Stephen Alaekwe & Co (sac.ng)</h3>
+                        <div class="timeline-role">Web Developer</div>
+                        <p>A collaborative project involving the review, planning, and implementation of improvements for a corporate data privacy and consulting firm's website.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">Consulting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Mobile Recipe App -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Mobile Recipe App</h3>
+                        <div class="timeline-role">Mobile Developer</div>
+                        <p>A cross-platform mobile application that fetches and displays culinary instructions from a live REST API, providing a clean and intuitive interface for users to discover new meals.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ikewa/recipe_flutter_summative" target="_blank" title="View Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Event Locator -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Event Locator</h3>
+                        <div class="timeline-role">Backend Developer</div>
+                        <p>A location-based web application connecting users with live events in their vicinity by integrating Geolocation Services to filter database queries spatially.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Geolocation API</span>
+                            <span class="tech-tag">Google Maps</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ikewa/Event_Locator" target="_blank" title="View Source Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Bookstore Application -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Bookstore Application</h3>
+                        <div class="timeline-role">Full-Stack Developer</div>
+                        <p>A full-stack e-commerce application for browsing and purchasing books, implementing extensive API testing and frontend debugging.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Strata -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Strata</h3>
+                        <div class="timeline-role">Designer & Developer</div>
+                        <p>A satirical mock brand project featuring hyper-modern footwear product lines, minimalist digital branding, logos, and 3D design concepts.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">3D Design</span>
+                            <span class="tech-tag">Digital Branding</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Full-Stack Task Manager -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Full-Stack Task Manager</h3>
+                        <div class="timeline-role">Full-Stack Developer</div>
+                        <p>A complete CRUD application built to demonstrate full-stack capabilities, featuring secure authentication and robust relational database modeling.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React/TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Freelance Web Project -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Freelance Client Project</h3>
+                        <div class="timeline-role">Web Developer</div>
+                        <p>A custom website developed and deployed for a client from scratch, managing the entire lifecycle from requirements gathering to hosting.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                            <span class="tech-tag">Deployment</span>
+                        </div>
                     </div>
                 </div>
 
@@ -187,15 +262,68 @@
 
         <footer>
             <p>Ready to build something together?</p>
-            <br>
             <div class="footer-links">
-                <a href="mailto:amirismailkewa@gmail.com">Email Me</a>
-                <a href="https://github.com/Ikewa">GitHub</a>
-                <a href="https://www.linkedin.com/in/ismail-kewa-25a467251">LinkedIn</a>
+                <a href="mailto:amirismailkewa@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/Ikewa"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ismail-kewa-25a467251"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
             <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 Ismail Dauda Kewa</p>
         </footer>
     </div>
 
+    <!-- Interactivity Script -->
+    <script>
+        // Theme Toggle Logic
+        const toggleBtn = document.getElementById('theme-toggle');
+        const icon = toggleBtn.querySelector('i');
+        const html = document.documentElement;
+
+        // Check local storage or system preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            html.setAttribute('data-theme', savedTheme);
+            updateIcon(savedTheme);
+        } else if (!window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // Default to dark, unless system specifically requests light
+            html.setAttribute('data-theme', 'light');
+            updateIcon('light');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            let currentTheme = html.getAttribute('data-theme');
+            let newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                icon.className = 'fas fa-sun'; // Show sun to switch to light mode
+            } else {
+                icon.className = 'fas fa-moon'; // Show moon to switch to dark mode
+            }
+        }
+
+        // Timeline Scroll Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+    </script>
 </body>
 </html>
